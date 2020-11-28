@@ -5,11 +5,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.11.10/cn_daily/20201110003048/9e816b1b/update.zip
+  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1969/CPH1969EX_11_OTA_0420_all_0Yeazk8Fy5qm.ozip
   ROM_NAME: Flyme
   TZ: Asia/Kolkata
   MIR: wet
-  ZIP_NAME: Flyme-8
+  ZIP_NAME: Color-OS
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/YuMiGSIs/ErfanGSIs-VelanGSIs.git  ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/DarkRane/ErfanGSIs-VelanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
